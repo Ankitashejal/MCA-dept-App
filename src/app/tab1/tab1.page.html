@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      
+       MCA DEPARTMENT
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,16 +10,16 @@
   <ion-header collapse="condense">
   
   </ion-header>
- 
-    <ion-title></ion-title>
+ <br><br>
+    <ion-title>Welcome to MCA Department of SPIT</ion-title>
      
   
   <ion-card style="margin-top: 10px;">
-    <img src="https://www.spit.ac.in/wp-content/uploads/2009/11/Entrance.jpg"
-    alt="campus">
+    <img src="https://mca.spit.ac.in/wp-content/uploads/2022/12/20221212_120147-scaled-e1670904222265-1024x463.jpg"
+    alt="campus" style="height: 15rem;">
     </ion-card>
     <p class="about">ABOUT US</p>
-    <p class="aboutDes">{{aboutUs}}</p>
+    <p class="aboutDes">aboutus</p>
     <ion-accordion-group [multiple]="true" style="margin: 1em;">
     <ion-accordion value="first" style="border: 2px red groove; margin-top: 1em">
     <ion-item slot="header" color="light">
@@ -30,9 +30,9 @@
     <ion-card>
     <img src="./assets/img/Vision.png" alt="vision">
     <ion-card-content style="text-align: justify;">
-    <p class="vText">{{visionTxt}}</p>
+    <p class="vText">visiontxt</p>
     <p class="vMain">
-    <b>{{visionMain}}</b>
+    <b>visionmain</b>
     </p>
     </ion-card-content>
     </ion-card>
@@ -60,7 +60,7 @@
   </ion-accordion-group>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button>
-    <ion-icon name="add"></ion-icon>
+   
     </ion-fab-button>
     <ion-fab-list side="top">
     <ion-fab-button class="c1" href="http://mca.spit.ac.in/"><ion-icon
@@ -77,7 +77,9 @@
     name="location"></ion-icon></ion-fab-button>
     </ion-fab-list>
     </ion-fab>
-    <ion-icon name="home-outline"></ion-icon>
+   <app-swiper slides="slides">
+
+   </app-swiper>
     </ion-content>
 
 
