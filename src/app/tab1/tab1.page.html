@@ -16,71 +16,57 @@
   
   <ion-card style="margin-top: 10px;">
     <img src="https://mca.spit.ac.in/wp-content/uploads/2022/12/20221212_120147-scaled-e1670904222265-1024x463.jpg"
-    alt="campus" style="height: 15rem;">
+    alt="campus" style="height: 13rem;">
     </ion-card>
-    <p class="about">ABOUT US</p>
-    <p class="aboutDes">aboutus</p>
-    <ion-accordion-group [multiple]="true" style="margin: 1em;">
-    <ion-accordion value="first" style="border: 2px red groove; margin-top: 1em">
-    <ion-item slot="header" color="light">
-    <ion-label style="font-family: Aff; font-size: 2em; font-weight: 200;">OUR
-    VISION</ion-label>
+  
+      <p class="about">ABOUT US</p>
+      <p class="aboutDes">{{aboutUs}}</p>
+      <ion-accordion-group [multiple]="true" style="margin: 1em;">
+      <ion-accordion value="first" style="border: 2px rgb(234, 227, 227) groove; margin-top: 1em">
+      <ion-item slot="header" color="light">
+      <ion-label style="font-family: Aff; font-size: 2em; font-weight: 200;">OUR
+      VISION</ion-label>
+      </ion-item>
+      <div class="ion" slot="content">
+      <ion-card>
+      <img src="https://mca.spit.ac.in/wp-content/uploads/2022/12/Mission_panel_whitebg.png" alt="vision">
+      <ion-card-content style="text-align: justify;">
+      <p class="vText">{{visionTxt}}</p>
+      <p class="vMain">
+      <b>{{visionMain}}</b>
+      </p>
+      </ion-card-content>
+      </ion-card>
+      </div>
+      </ion-accordion>
+      <ion-accordion value="second" style="border: 2px rgb(234, 223, 223) groove; margin-top: 1em">
+      <ion-item slot="header" color="light">
+      <ion-label style="font-family: Aff; font-size: 2em; font-weight: 200;">OUR
+      MISSION</ion-label>
     </ion-item>
     <div class="ion" slot="content">
     <ion-card>
-    <img src="./assets/img/Vision.png" alt="vision">
+    <img src="https://mca.spit.ac.in/wp-content/uploads/2022/12/Vision_whitebg.png" alt="vision">
     <ion-card-content style="text-align: justify;">
-    <p class="vText">visiontxt</p>
-    <p class="vMain">
-    <b>visionmain</b>
-    </p>
-    </ion-card-content>
-    </ion-card>
-    </div>
-    </ion-accordion>
-    <ion-accordion value="second" style="border: 2px red groove; margin-top: 1em">
-    <ion-item slot="header" color="light">
-    <ion-label style="font-family: Aff; font-size: 2em; font-weight: 200;">OUR
-    MISSION</ion-label>
-  </ion-item>
-  <div class="ion" slot="content">
-  <ion-card>
-  <img src="./assets/img/Mission.jpg" alt="mission">
-  <ion-card-content>
-  <ion-list lines="inset" *ngFor="let item of missionList; let i =
-  index">
-  <ion-item class="mission">
-  
-  </ion-item>
-  </ion-list>
-  </ion-card-content>
-  </ion-card>
-  </div>
-  </ion-accordion>
-  </ion-accordion-group>
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button>
-   
-    </ion-fab-button>
-    <ion-fab-list side="top">
-    <ion-fab-button class="c1" href="http://mca.spit.ac.in/"><ion-icon
-    name="desktop"></ion-icon></ion-fab-button>
-    <ion-fab-button class="c2"
-    href="https://www.instagram.com/ace_committee_spit_mca/"><ion-icon
-    name="logo-instagram"></ion-icon></ion-fab-button>
-    <ion-fab-button class="c3"
-    href="https://www.linkedin.com/school/bhartiya-vidya-bhavans-sardar-patel-institute
-    -of-technology-munshi-nagar-andheri-mumbai/"><ion-icon
-    name="logo-linkedin"></ion-icon></ion-fab-button>
-    <ion-fab-button class="c3"
-    href="https://goo.gl/maps/Ypo7eNBo671vS6ZE6"><ion-icon
-    name="location"></ion-icon></ion-fab-button>
-    </ion-fab-list>
-    </ion-fab>
-   <app-swiper slides="slides">
 
-   </app-swiper>
+      <ion-content>
+      <ion-title>Program Outcomes</ion-title>
+      <ion-card>
+        <p>1.Apply standard practices and strategies required for the industry
+          2.Solve real-world problems using cutting-edge technology.</p>
+      </ion-card>
     </ion-content>
+
+      
+      
+
+      
+     
+
+ 
+
+  
+ 
 
 
 

@@ -12,5 +12,38 @@
       <ion-title size="large">FACULTY</ion-title>
     </ion-toolbar>
   </ion-header>
+<!-- Introduction -->
+<ion-card style="margin-top: 20px;">
+  <ion-card-content style="border-radius: 20px;">
+  <ion-card-title size="large" style="color: #e8db50; text-align: center;" >Our Faculty Members</ion-card-title>
+  </ion-card-content>
+  </ion-card>
+  <ion-card style="margin-top: 20px;">
+  <ion-accordion-group >
+  <ion-accordion *ngFor="let faculty of facultyMembers" class = "ion-margin-bottom ion-padding-bottom">
+  <ion-item slot="header" color="light" >
+  <ion-thumbnail slot="start" class="pfp">
+  <img [src]="faculty.photo" alt="{{ faculty.name }} photo">
+  </ion-thumbnail>
+  <div style="display: flex; flex-direction: column; margin-left: 10px;">
+    <ion-label>{{ faculty.name }}</ion-label>
+    <!-- Adjusted the style of the designation -->
+    <p style="font-size: 12px; color: #e8db50;">{{ faculty.designation }}</p>
+  </div>
+  </ion-item>
+  <div class="ion-padding" slot="content">
+  <h3>{{ faculty.info }}</h3>
+  <p [innerHTML]>{{ faculty.about }}</p>
 
+  <ion-button fill="clear" href="{{ faculty.linkedin }}"
+  target="_blank">
+  <ion-icon name="logo-linkedin"></ion-icon>
+  </ion-button>
+  </div>
+  
+  </ion-accordion>
+  <br><br>
+  </ion-accordion-group>
+  </ion-card>
+  </ion-content>
  

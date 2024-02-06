@@ -1,3 +1,4 @@
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -6,3 +7,56 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">FEEDBACK FORM</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-list>
+  <ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-input labelPlacement="stacked" label="Name" placeholder="Enter Name">
+          <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+          <ion-button fill="clear" slot="end" aria-label="Show/hide">
+          </ion-button>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-item>
+      <ion-input labelPlacement="stacked" label="Number" placeholder="Enter Number">
+        <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+        <ion-button fill="clear" slot="end" aria-label="Show/hide">
+        </ion-button>
+      </ion-input>
+    </ion-item>
+
+    <ion-list>
+      <ion-item>
+        <ion-input labelPlacement="stacked" label="Password" [type]="showPassword ? 'text' : 'password'" placeholder="Password" clearInput="true">
+
+          <ion-icon slot="start" name="lock-closed"></ion-icon>
+            <ion-icon slot="end" name="eye-outline" (click)="togglePasswordVisibility()"></ion-icon>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+    
+
+    <ion-list>
+      <ion-item>
+        <ion-input labelPlacement="stacked" label="Email" placeholder="email@domain.com">
+          <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+          <ion-button fill="clear" slot="end" aria-label="Show/hide">
+            <ion-icon slot="start" name="eye-outline"></ion-icon>
+          </ion-button>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+    </ion-list>
+</ion-list>
+
+  <app-explore-container name="Tab 4 page"></app-explore-container>
+</ion-content>
