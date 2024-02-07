@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent ,IonFooter ,IonItem ,IonFabButton } from '@ionic/angular/standalone';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 import { IonicModule } from '@ionic/angular';
+
 // import Swiper from 'swiper';
 // import { SwiperComponent } from './swiper/swiper.component';
 
